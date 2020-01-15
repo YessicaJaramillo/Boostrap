@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Tablas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!-- .table-striped Nos permite alternar colores entre cada fila -->
+                <!-- .table-bordered Nos permite agregarle bordes a la tabla -->
+                <!-- .table-hover Nos permite agregarle un hover a las filas -->
+                <!-- .table-dark Nos permite cambiar los colores de la tabla a osucors -->
+                <!-- .table-sm Nos permite hacer la tabla mas pequeña eliminando paddings -->
+                <!-- .table-responsive-xx Nos permite adaptar nuestra tabla a dispositivos moviles -->
+
+                <table class="table table-bordered table-hover  table-responsive-lg">
+                    <!-- las tablas no se pueden hacer responsive, pero se puede hacer algo con table-responsive
+                         y pone un pequeño scroll dentro de la tabla para que no se vea tan feo -->
+                    <thead>
+                        <!-- Encabezado tabla -->
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Pais</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- .table-active -->
+                        <!-- .table-success -->
+                        <!-- .table-warning -->
+                        <!-- .table-danger -->
+                        <!-- .table-info -->
+                        <tr class="table-info">
+                            <td>Cristian</td>
+                            <td>21</td>
+                            <td>Colombia</td>
+                        </tr>
+                        <tr>
+                            <td>Alejandra</td>
+                            <td>20</td>
+                            <td>Colombia</td>
+                        </tr>
+                        <!-- .bg-primary -->
+                        <!-- .bg-success -->
+                        <!-- .bg-warning -->
+                        <!-- .bg-danger -->
+                        <!-- .bg-info -->
+                        <tr class="bg-primary text-white">
+                            <td>Cesar</td>
+                            <td>30</td>
+                            <td>Mexico</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

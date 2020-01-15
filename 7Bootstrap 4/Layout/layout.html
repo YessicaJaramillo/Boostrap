@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>Ejemplo de Grid con Bootstrap 4</title>
+</head>
+
+<!-- Los row ya vienen con bootstrap como pretederminado y es un elemento padre  y ya no es necesario poner d-flex -->
+
+<body>
+
+    <div class="container">
+        <header class="row">
+            <div class="col">
+                <!-- se puede poner solo col o col-12 -->
+
+                <h1>Header</h1>
+
+                <p class="d-block">12 Columnas</p>
+
+            </div>
+        </header>
+
+        <main class="row">
+            <article class="col-md-8 col-sm-12">
+                <h3>Articulo</h3>
+
+                <p class="d-none d-md-block">8 Columnas</p>
+                <p class="d-block d-md-none">12 Columnas</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt sint fugiat necessitatibus repudiandae asperiores vero, pariatur sunt repellat. Tempora nesciunt ab perspiciatis repudiandae, suscipit facere ratione quaerat doloribus
+                    unde!
+                </p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum doloremque dolorum, atque minima impedit sunt, ducimus similique doloribus nobis veritatis pariatur dicta distinctio totam nemo rem sequi est voluptatibus reiciendis!</p>
+
+            </article>
+
+            <aside class="col-md-4 col-sm-12 align-self-center">
+                <div>
+                    <h3>Sidebar</h3>
+
+                    <p class="d-none d-md-block">4 Columnas</p>
+                    <p class="d-block d-md-none">12 Columnas</p>
+
+                </div>
+            </aside>
+        </main>
+
+        <section class="row widgets justify-content-between">
+            <div class="col-12 col-md-4 col-lg-3 widget">
+                <h3>Widget</h3>
+
+                <p class="d-none d-md-none d-lg-block">4 Columnas</p>
+                <p class="d-none d-md-block d-lg-none">3 Columnas</p>
+                <p class="d-block d-md-none">12 Columnas</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 widget">
+                <h3>Widget</h3>
+
+                <p class="d-none d-md-none d-lg-block">4 Columnas</p>
+                <p class="d-none d-md-block d-lg-none">3 Columnas</p>
+                <p class="d-block d-md-none">12 Columnas</p>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 widget">
+                <h3>Widget</h3>
+
+                <p class="d-none d-md-none d-lg-block">4 Columnas</p>
+                <p class="d-none d-md-block d-lg-none">3 Columnas</p>
+                <p class="d-block d-md-none">12 Columnas</p>
+
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col">
+                <h3>Footer</h3>
+
+                <p class="d-block">12 Columnas</p>
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
